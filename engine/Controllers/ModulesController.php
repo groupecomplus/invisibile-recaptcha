@@ -16,8 +16,8 @@ class ModulesController extends MchModulesController
 	CONST MODULE_BUDDYPRESS     = 'BuddyPress';
 	CONST MODULE_ULTRACOMMUNITY = 'UltraCommunity';
 	
-	protected static function getAllAvailableModules()
-	{
+	protected static function getAllAvailableModules(): array
+    {
 		return array(
 
 			self::MODULE_SETTINGS => array(
@@ -101,4 +101,4 @@ class ModulesController extends MchModulesController
 
 	return file_exists($filePath) ? include $filePath : null;
 
-}, false);
+});

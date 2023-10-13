@@ -81,4 +81,4 @@ spl_autoload_register(function($className){
 
 
 
-}, false, true);
+}, true, true);
